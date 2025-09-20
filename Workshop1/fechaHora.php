@@ -1,0 +1,73 @@
+<?php
+date_default_timezone_set('America/Costa_Rica');
+
+header("Refresh: 1");
+
+$fecha = date("d-m-Y");
+$hora = date("H:i:s");
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fecha y hora actuales</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fcfcfcff, #1d72faff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 3rem 5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            color: #112252ff;
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            color: #737888ff;
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            color: #575757;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Fecha y Hora Actuales (Dinámico)</h1>
+        <h2>📆 Fecha actual: </h2>
+        <p><?php echo $fecha;?></p>
+        <h2>⏰ Hora actual: </h2>
+        <p><?php echo $hora;?></p>
+    </div>
+</body>
+
+</html>
