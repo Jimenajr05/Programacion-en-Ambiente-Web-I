@@ -1,0 +1,106 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ddedfc, #76edf3);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja del formulario */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Sub títulos */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Etiquetas de los campos */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos de texto y correo */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Efecto cuando se selecciona el campo */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 6px rgba(79, 172, 254, 0.5);
+    outline: none;
+}
+
+/* Botón Guardar */
+input[type="submit"] {
+    display: block;
+    width: 70%;
+    margin: 20px auto 0;
+    padding: 14px;
+    background: #4facfe;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse en Guardar */
+input[type="submit"]:hover {
+    background: #00c6ff;
+    transform: translateY(-2px);
+}
+
+/* Botón Volver */
+.btn-volver {
+    display: block;
+    margin: 20px auto 0;
+    width: 40%;
+    padding: 12px;
+    background: #bebebe;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse en Volver */
+.btn-volver:hover {
+    background: #e4e4e4;
+    transform: translateY(-2px);
+}

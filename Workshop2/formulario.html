@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        <form action="insertar.php" method="post">
+            <label>Nombre: </label>
+            <input type="text" name="nombre" required>
+
+            <label>Apellidos: </label>
+            <input type="text" name="apellido" required>
+
+            <label>Correo: </label>
+            <input type="text" name="correo" required>
+
+            <label>Teléfono: </label>
+            <input type="text" name="telefono" required>
+
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+</body>
+
+</html>
